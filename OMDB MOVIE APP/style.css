@@ -27,7 +27,7 @@ html, body{
   height: 50px;
   display: flex;
   background-color: transparent;
-  position: absolute;
+  position: fixed;
   z-index: 11;
   color: white;
   justify-content: space-around;
@@ -64,10 +64,14 @@ html, body{
   color: white;
 }
 
-#nav > #search{
-  font-size: 3.5vw;
+a{
+  text-decoration: none;
 }
-#nav > #search > a{
+a > i{
+  font-size: 4vw;
+  font-weight: 400;
+  margin-right: 30px;
+  opacity: .7;
   text-decoration: none;
   color: white;
 }

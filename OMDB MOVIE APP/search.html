@@ -8,10 +8,11 @@
     <link rel="stylesheet" href="search.css">
 </head>
 <body>
+    <div id="main1">
     <div id="nav">
         <div id="logo">
           <i class="ri-movie-2-fill"></i>
-        </div>
+        </div>  
         <div id="text">
           <a href="index.html">Home</a>
         <a href="categories.html">Categories</a>
@@ -22,5 +23,21 @@
           <i class="ri-search-line"></i>
         </div>
       </div>
+      <div id="display">
+        <div id="loading">
+          <span class="loader"></span>
+          <h3>Loading</h3>
+        </div>
+        <div id="search-nav">
+            <form action="">
+            <input type="text" placeholder="Search . . ." id="movie-search">
+            <button type="submit" id="movie-search-btn"><i class="ri-search-fill"></i></button>
+            </form>
+        </div>
+        <div id="root">
+        </div>
+      </div>
+    </div>
 </body>
 </html>
+<script src="search.js"></script>
