@@ -6,7 +6,35 @@ let root = document.getElementById("root");
 
 function displayMovieInfo(movieData){
 
-    let cardCont = document.createElement("div");
+    if(movieData.Response == "False"){
+        let cardCont0 = document.createElement("div");
+        cardCont0.id = "card-cont";
+
+        let cardUpr0 = document.createElement("div");
+        cardUpr0.id = "card-upr0";
+
+        let cardText0 = document.createElement("div");
+        cardText0.id = "card-text0";
+
+        let cardTextH1 = document.createElement("h1");
+        cardTextH1.textContent = `Movie Not Found`;
+
+        cardText0.append(cardTextH1)
+
+        cardUpr0.append(cardText0);
+
+        cardCont0.append(cardUpr0);
+
+        cardCont0.append(cardUpr0)
+
+        console.log("erroe");
+
+        root.innerHTML = '';
+        root.append(cardCont0);
+    }
+    else{
+
+            let cardCont = document.createElement("div");
         cardCont.id = "card-cont";
 
         let cardUpr = document.createElement("div");
@@ -93,12 +121,16 @@ function displayMovieInfo(movieData){
         icon2.append(iconDiv2, iconText2);
 
     // }
+
 cardLwr.append(icon, icon1, icon2);
 
 cardCont.append(cardUpr, cardLwr)
 
         root.innerHTML = '';
         root.append(cardCont);
+    }
+
+
 
 
 }
