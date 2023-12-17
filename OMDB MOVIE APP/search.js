@@ -27,7 +27,7 @@ function displayMovieInfo(movieData){
 
         cardCont0.append(cardUpr0)
 
-        console.log("erroe");
+        console.log("error");
 
         root.innerHTML = '';
         root.append(cardCont0);
@@ -119,8 +119,6 @@ function displayMovieInfo(movieData){
         iconText2.textContent = `2.5/10`;
 
         icon2.append(iconDiv2, iconText2);
-
-    // }
 
 cardLwr.append(icon, icon1, icon2);
 

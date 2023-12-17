@@ -101,7 +101,7 @@ document.addEventListener("DOMContentLoaded", function () {
       },
     });
   
-    // Additional code for any other functionality or modifications
+
   });
   
   

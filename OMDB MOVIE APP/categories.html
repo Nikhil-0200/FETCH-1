@@ -4,24 +4,72 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Categories</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <link href="https://cdn.jsdelivr.net/npm/remixicon@3.7.0/fonts/remixicon.css" rel="stylesheet">
     <link rel="stylesheet" href="categories.css">
     
 </head>
 <body>
+  <div id="baap">
+   
+  <div id="main">
     <div id="nav">
-        <div id="logo">
-          <i class="ri-movie-2-fill"></i>
-        </div>
-        <div id="text">
-          <a href="index.html">Home</a>
-        <a href="categories.html">Categories</a>
-        <a href="movie.html">Movie</a>
-        <a href="series.html">Series</a>
-        </div>
-        <div id="search"><a href="search.html"> 
-          <i class="ri-search-line"></i>
-        </div>
+      <div id="logo">
+        <i class="ri-movie-2-fill"></i>
       </div>
+      <div id="text">
+        <a href="index.html">Home</a>
+      <a href="categories.html">Categories</a>
+      <a href="movie.html">Movie</a>
+      <a href="series.html">Series</a>
+      </div>
+      <a href="search.html"> 
+        <i class="ri-search-line"></i>
+        </a>
+    </div>
+    <div id="cat-swiper">
+      <h2>Popular Now</h2>
+      <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide"><img src="./fff/Jawan-Teaser-Release-Date-Announced-Get-Ready-for-Shahrukh-Khans-Latest-Film-1024x576.jpg" alt=""></div>
+          <div class="swiper-slide"><img src="./fff/transformers-rise-of-the-beasts-movie-poster.jpg" alt=""></div>
+          <div class="swiper-slide"><img src="./fff/wednesday-movie-poster-md.jpg" alt=""></div>
+          <div class="swiper-slide"><img src="./fff/fast-x-movie-poster-md.jpg" alt=""></div>
+          <div class="swiper-slide"><img src="./fff/ghost-rider-spirit-of-vengeance-movie-poster-md.jpg" alt=""></div>
+          <div class="swiper-slide"><img src="./fff/the-hunger-games-mockingjay-part-2-movie-poster-md.jpg" alt=""></div>
+          <div class="swiper-slide"><img src="./fff/journey-2-the-mysterious-island-movie-poster-md.jpg" alt=""></div>
+          <div class="swiper-slide"><img src="./fff/the-beekeeper-movie-poster-md.jpg" alt=""></div>
+          <div class="swiper-slide"><img src="./fff/top-gun-maverick-movie-poster-md (1).jpg" alt=""></div>
+        </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-pagination"></div>
+      </div>
+    </div>
+  </div>
+  <div id="cat-div">
+    <h2>Category</h2>
+    <div id="cat-1">
+      <a href="./cat-data.html"><button id="drama"><i class="ri-emotion-sad-fill"></i> Drama</button></a>
+      <a href="./cat-data.html"><button id="comedy"><i class="ri-emotion-laugh-fill"></i> Comedy</button></a>
+      <a href="./cat-data.html"><button id="romance"><i class="ri-hearts-fill"></i> Romance</button></a>
+      <a href="./cat-data.html"><button id="horror"><i class="ri-skull-2-fill"></i> Horror</button></a>
+      <a href="./cat-data.html"><button id="action"><i class="ri-run-fill"></i> Action</button></a>
+      <a href=""><button id="children"><i class="ri-pencil-ruler-line"></i> Children</button></a>
+    </div>
+    <div id="cat-1">
+      <a href="./cat-data.html"><button id="adventure"><i class="ri-treasure-map-fill"></i> Adventure</button></a>
+      <a href="./cat-data.html"><button id="thriller"><i class="ri-criminal-fill"></i> Thriller</button></a>
+      <a href="./cat-data.html"><button id="fantasy"><i class="ri-magic-fill"></i> Fantasy</button></a>
+      <a href="./cat-data.html"><button id="mystery"><i class="ri-sparkling-2-fill"></i> Mystery</button></a>
+      <a href="./cat-data.html"><button id="anime"><i class="ri-bear-smile-fill"></i> Anime</button></a>
+      <a href="./cat-data.html"><button id="Family"><i class="ri-group-2-fill"></i> Family</button></a>
+    </div>
+  </div>
+</div>
+ 
 </body>
 </html>
+<script src="./cat-data.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script src="categories.js"></script>

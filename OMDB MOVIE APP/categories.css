@@ -8,6 +8,7 @@
     padding: 0;
     margin: 0;
     font-family: "Gilroy";
+    color: #fff;
 }
 
 html, body{
@@ -16,12 +17,24 @@ html, body{
     box-sizing: border-box;
 }
 
+
+#baap{
+  overflow-x: hidden;
+}
+
+#main{
+  width: 100%;
+  min-height: 100vh;
+  position: relative;
+  background-color: black;
+  overflow-x: hidden;
+}
 #nav{
     width: 100%;
     height: 50px;
     display: flex;
-    background-color: transparent;
-    position: absolute;
+    background-color: rgb(179, 185, 245);
+    position: fixed;
     z-index: 11;
     color: white;
     justify-content: space-around;
@@ -31,6 +44,49 @@ html, body{
     transition: all ease .5s;
   }
   
+  #cat-swiper{
+    position: absolute;
+    width: 100%;
+    min-height: auto;
+    padding-bottom: 30px;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: linear-gradient(to right, black, #9fc6f6);
+  }
+
+  #cat-swiper > h2{
+    /* border: 2px solid red; */
+    padding: 10px 5px;
+    color: #fff;
+    z-index: 11;
+  }
+  .swiper {
+    width: 100%;
+    height: 100%;
+  }
+
+  .swiper-slide {
+    text-align: center;
+    width: 100px;
+    height: 450px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 11;
+    border-radius: 20px;
+    overflow: hidden;
+  }
+
+  .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    background-position: center;
+    background-size: cover;
+  }
   #nav:hover{
     background-color: #5ecb1550;
   }
@@ -57,7 +113,18 @@ html, body{
     text-decoration: none;
     color: white;
   }
-  
+  a{
+    text-decoration: none;
+  }
+  a > i{
+    font-size: 4vw;
+    font-weight: 400;
+    margin-right: 30px;
+    opacity: .7;
+    text-decoration: none;
+    color: white;
+  }
+
   #nav > #search{
     font-size: 3.5vw;
   }
@@ -65,3 +132,67 @@ html, body{
     text-decoration: none;
     color: white;
   }
+
+  #cat-div{
+    border: 2px solid black;
+    width: 100%;
+    height: 50vh;
+    background-color: black;
+  }
+
+  #cat-div > h2{
+    padding: 10px 5px;
+  }
+
+  #cat-1{
+    height: 110px;
+    padding-left: 10px;
+    /* background-color: #9fc6f6; */
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+
+  #cat-1 > a{
+    width: 100%;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+
+  #cat-1 > a >button{
+    width: 80%;
+    height: 80%;
+    border-radius: 20px;
+    font-size: 2vw;
+    color: white;
+    font-weight: 900;
+    background-color: rgba(255, 255, 255, 0.413);
+    border: none;
+  }
+
+  
+  #cat-1 > a:nth-child(1) > button > i {
+    color: rgb(6, 197, 255);
+}
+
+#cat-1 > a:nth-child(3) > button > i {
+    color: rgba(205, 219, 166, 0.568);
+}
+
+#cat-1 > a:nth-child(2) > button > i {
+    color: rgb(206, 249, 99);
+}
+
+#cat-1 > a:nth-child(4) > button > i {
+    color: rgba(77, 46, 100, 0.913);
+}
+
+#cat-1 > a:nth-child(5) > button > i {
+    color: rgba(255, 255, 133, 0.913);
+}
+
+#cat-1 > a:nth-child(6) > button > i {
+    color: rgba(57, 14, 91, 0.913);
+}
