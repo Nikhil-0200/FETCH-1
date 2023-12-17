@@ -21,5 +21,3 @@ function swiper(){
 
 swiper();
 
-  
-document.getElementById("drama").addEventListener("click", () => searchByGenre("Drama"));

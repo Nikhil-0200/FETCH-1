@@ -1,7 +1,7 @@
 
 
 function drama(){
-    fetchAllMovies("Drama");
+    fetchAllMovies("Horror");
 
     function gridData(user) {
 
@@ -50,7 +50,7 @@ function drama(){
 
 
         let itemSearched = document.createElement("div");
-        itemSearched.textContent = "Drama";
+        itemSearched.textContent = "Action";
 
         // let searchbtn = document.getElementById("searchbtn");
         // searchbtn.addEventListener("click", function(){
