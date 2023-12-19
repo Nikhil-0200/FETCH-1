@@ -1,0 +1,109 @@
+*{
+    padding:0;
+    margin:0;
+}
+
+html, body{
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-around;
+    padding-top:5%;
+}
+
+#main{
+    /* flex-grow: 3; */
+width: 95%;
+/* height: 40%; */
+border: 1px solid black;
+/* background-color: aliceblue; */
+display: flex;
+align-items: center;
+justify-content: space-evenly;
+}
+
+#form-table{
+    width: 20%;
+    height: fit-content;
+    background-color: aliceblue;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+form{
+    padding: 10px 20px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    /* border: 2px solid red; */
+}
+
+button{
+    margin-top: 20px;
+    width: 50%;
+    padding: 8px 10px;
+    border-radius: 20px;
+    border: none;
+    transition: all ease .5s;
+}
+
+#btn{
+    width: 100%;
+    box-sizing: border-box;
+    /* border:  2px solid red; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+#btn > button{
+    width: 45%;
+    /* padding: 8px 10px; */
+    border-radius: 20px;
+    border: none;
+    transition: all ease .5s;
+}
+
+#btn > button:hover{
+    background-color: red;
+
+}
+
+button:hover{
+    background-color: rgb(96, 222, 104);
+}
+
+#data{
+    /* flex-grow: 1; */
+    width: 45%;
+    height: 100%;
+    box-sizing: border-box;
+    border: 1.5px solid blue;
+    /* background-color: red; */
+}
+
+table{
+    width: 100%;
+    /* border: 1px solid red;   */
+}
+
+#thead > tr > td{
+    background-color: rgba(66, 128, 167, 0.667);
+}
+
+
+
+td{
+    width: 20px;
+    height: 12px;
+    /* border: 2px solid red; */
+    background-color: aqua;
+}
