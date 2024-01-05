@@ -1,23 +1,17 @@
-function swiper(){
-    var swiper = new Swiper(".mySwiper", {
-        spaceBetween: 30,
-        centeredSlides: true,
-        slidesPerView: 4,
-        loop: true,
-        autoplay: {
-          delay: 2500,
-          disableOnInteraction: false,
-        },
-        pagination: {
-          el: ".swiper-pagination",
-          clickable: true,
-        },
-        navigation: {
-          nextEl: ".swiper-button-next",
-          prevEl: ".swiper-button-prev",
-        },
-      });
+import displayNavBar from "./displayNavbar.js";
+import { swiper } from "./swiperr.js";
+
+let nav = document.getElementById("nav");
+
+
+function showData(){
+  displayNavBar(nav);
+  swiper();
 }
 
-swiper();
+showData()
+
+
+
+
 
