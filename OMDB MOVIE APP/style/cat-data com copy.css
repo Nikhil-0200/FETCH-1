@@ -120,3 +120,16 @@ html, body{
     z-index: 10;
 
   }
+
+  #grid-box1{
+    height: 100%;
+    width: 95%;
+    z-index: 100;
+  }
+    
+    #grid-box1 > error_msg{
+      height: 100%;
+      width: 95%;
+      
+    }
+    

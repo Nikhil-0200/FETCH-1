@@ -12,7 +12,7 @@ async function fetchData() {
 
     try {
 
-        root.innerHTML = null;
+        root.innerHTML = null;  
         let res = await fetch(API_URL);
         let finalData = await res.json();
         gridData2(finalData.results, root);
@@ -25,6 +25,7 @@ async function fetchData() {
 let timerId;
 
 function debounce(fetchData, delay) {
+    root.innerHTML = null; 
     if (timerId) {
         clearTimeout(timerId);
     }
