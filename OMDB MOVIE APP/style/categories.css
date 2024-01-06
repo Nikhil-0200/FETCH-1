@@ -44,6 +44,21 @@ html, body{
     transition: all ease .5s;
   }
   
+    #nav{
+      width: 100%;
+      height: 10px;
+      display: flex;
+      background-color: rgb(179, 185, 245);
+      position: fixed;
+      z-index: 11;
+      color: white;
+      justify-content: space-around;
+      align-items: center;
+      /* border: 2px solid red ; */
+      padding: 20px;
+      transition: all ease .5s;
+    }
+  
   #cat-swiper{
     position: absolute;
     width: 100%;
@@ -64,6 +79,27 @@ html, body{
   .swiper {
     width: 100%;
     height: 100%;
+  }
+
+  @media screen and (min-width: 350px) and (max-width: 700px){
+    .swiper {
+      width: 200%;
+      height: 70%;
+    }
+
+     
+  #cat-swiper{
+    position: absolute;
+    min-width: 100%;
+    min-height: auto;
+    padding-bottom: 30px;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: linear-gradient(to right, black, #9fc6f6);
+  }
+
+  
   }
 
   .swiper-slide {
@@ -95,15 +131,30 @@ html, body{
     width: 10%;
     /* background-color: red; */
   }
+
+ 
   
   #nav > #logo > i {
    font-size: 5vw;
   }
-  
+
+  @media screen and (min-width:350px) and (max-width: 700px) {
+    #nav > #logo > i {
+      font-size: 10vw;
+      margin-left: -10px;
+     }
+  }
   #nav > #text{
     margin-right: 10vw;
     /* background-color: #fff; */
   
+  }
+  @media screen and (min-width: 350px) and (max-width: 700px) {
+    #nav > #text{
+      /* margin-right: 10vw; */
+      margin-left: 10vw;
+      /* background-color: #fff; */
+    } 
   }
   #nav > #text > a{
     font-size: 2vw;
@@ -115,6 +166,18 @@ html, body{
     transition: all ease 0.6s;
   }
   
+  @media screen and (min-width: 350px) and (max-width: 700px) {
+    #nav > #text > a{
+      font-size: 3.5vw;
+      font-weight: 500;
+      margin-right: 15px;
+      opacity: .9;
+      text-decoration: none;
+      color: white;
+      transition: all ease 0.6s;
+    } 
+  }
+
   #nav > #text > a:hover{
     color: rgb(255, 255, 255);
     font-weight: 700;
@@ -133,6 +196,16 @@ html, body{
     color: white;
   }
 
+  @media screen and (min-width: 350px) and (max-width: 700px) {
+    a > i{
+      font-size: 7vw;
+      font-weight: 400;
+      margin-right: 30px;
+      opacity: .7;
+      text-decoration: none;
+      color: white;
+    }
+  }
   #nav > #search{
     font-size: 3.5vw;
   }
@@ -161,6 +234,26 @@ html, body{
     justify-content: space-evenly;
   }
 
+  @media screen and (min-width:350px) and (max-width: 700px) {
+    #cat-div{
+      border: 2px solid black;
+      width: 100%;
+      min-height: 350vh;
+      background-color: black;
+    }
+  
+    .catt{
+      height: 150px;
+      padding-left: 10px;
+      /* background-color: #9fc6f6; */
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-evenly;
+    }
+
+  }
+
   .catt > a{
     width: 100%;
     height: 100px;
@@ -169,6 +262,18 @@ html, body{
     justify-content: space-evenly;
   }
 
+  @media screen and (min-width: 350px) and (max-width: 700px) {
+    .catt > a{
+      width: 90%;
+      height: 90%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-evenly;
+    }    
+
+    
+  }
   .catt > a >button{
     width: 80%;
     height: 80%;
@@ -178,6 +283,32 @@ html, body{
     font-weight: 900;
     background-color: rgba(255, 255, 255, 0.413);
     border: none;
+    /* gap: 50px; */
+  }
+
+  @media screen and (min-width: 350px) and (max-width: 700px) {
+    #cat-1{
+      background-color: black;
+      height: 50%;
+    }
+
+    #cat-2{
+      background-color: black;
+      height: 50%;
+    }
+
+    .catt > a >button{
+      width: 80%;
+      height: 50%;
+      border-radius: 20px;
+      font-size: 8vw;
+      color: white;
+      font-weight: 900;
+      background-color: rgba(255, 255, 255, 0.413);
+      border-radius: 40px;
+      border: none;
+      /* gap: 50px; */
+    }
   }
 
   

@@ -10,7 +10,7 @@ export function swiperr() {
         disableOnInteraction: false,
       },
     });
-  
+
     var swiper2 = new Swiper(".mySwiper2", {
       loop: true,
       spaceBetween: 10,
