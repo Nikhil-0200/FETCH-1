@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.7.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="./movies.css">
+</head>
+<body>
+    <div id="main">
+        <div id="nav">
+        </div>
+        <div id="display">
+            <input type="text" placeholder="Search Movies . . ." id="movie-search" oninput="debounce(fetchData,1000)">
+            <div id="root">
+            </div>
+        </div>
+</body>
+</html>
+<script src="movies.js" type="module"></script>

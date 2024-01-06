@@ -6,8 +6,7 @@
             <div id="text">
             <a href="index.html">Home</a>
             <a href="categories.html">Categories</a>
-            <a href="#">Movie</a>
-            <a href="#">Series</a>
+            <a href="movies.html">Movie</a>
             </div>
             <a href="search.html"> 
             <i class="ri-search-line"></i>

@@ -1,4 +1,4 @@
-import displayMovieInfo from "./searchDisplay.js";
+import displayMovieInfo from "./export/searchDisplay.js";
 
 let myForm = document.querySelector("#search-nav > form");
 let movieSearchInput = document.getElementById("movie-search");
@@ -30,7 +30,7 @@ myForm.addEventListener("submit", async (e)=>{
     let API_URL = `HTTPS://www.omdbapi.com/?apikey=${API_KEY}&t=${searchItem}`;
     await loading()
     async function fetchData(){
-        
+        root.innerHTML = null;
         try {
         let res = await fetch(API_URL);
         let finalData = await res.json();

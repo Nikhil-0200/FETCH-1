@@ -1,5 +1,5 @@
-import displayNavBar from "./displayNavbar.js";
-import { swiper } from "./swiperr.js";
+import displayNavBar from "./export/displayNavbar.js";
+import { swiper } from "./export/swiperr.js";
 
 let nav = document.getElementById("nav");
 

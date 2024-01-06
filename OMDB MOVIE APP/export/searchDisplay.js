@@ -1,5 +1,7 @@
 function displayMovieInfo(movieData){
 
+    
+
     if(movieData.Response == "False"){
         let cardCont0 = document.createElement("div");
         cardCont0.id = "card-cont";
@@ -42,7 +44,6 @@ function displayMovieInfo(movieData){
 
         imgDiv.append(Img)
 
-
         let cardText = document.createElement("div");
         cardText.id = "card-text";
 
@@ -76,7 +77,7 @@ function displayMovieInfo(movieData){
         iconDiv.append(iconImg);
 
         let iconText = document.createElement("h2");
-        iconText.textContent = `6.5/10`;
+        iconText.textContent = `${movieData.imdbRating}/10`;
 
         icon.append(iconDiv, iconText);
         
@@ -93,7 +94,7 @@ function displayMovieInfo(movieData){
         iconDiv1.append(iconImg1);
 
         let iconText1 = document.createElement("h2");
-        iconText1.textContent = `4.5/10`;
+        iconText1.textContent = `${parseFloat(movieData.imdbRating) + 1}/10`;
 
         icon1.append(iconDiv1, iconText1);
 
@@ -110,7 +111,7 @@ function displayMovieInfo(movieData){
         iconDiv2.append(iconImg2);
 
         let iconText2 = document.createElement("h2");
-        iconText2.textContent = `2.5/10`;
+        iconText2.textContent = `${parseFloat(movieData.imdbRating) - 2}/10`;
 
         icon2.append(iconDiv2, iconText2);
 
@@ -123,5 +124,9 @@ cardCont.append(cardUpr, cardLwr)
     }
 }
 
+
+window.onload = function load(){
+    displayMovieInfo()
+}
 
 export default displayMovieInfo;
