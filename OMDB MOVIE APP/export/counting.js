@@ -55,10 +55,11 @@ function counting(){
     })
     
     .to("#top-screen",{
-        top: "-110%",
+        top: "-100%",
         delay: 1,
         duration: 1.2,
         ease: "power4.out",
+        
     })
     
     }
