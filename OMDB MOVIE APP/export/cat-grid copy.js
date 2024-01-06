@@ -28,11 +28,14 @@
         cardTextH3o.textContent = `Plot: ${element.overview}`;
 
     let gridH5 = document.createElement("h5");  
-    gridH5.textContent = element.release_date;
+    gridH5.textContent = `Release Date: ${element.release_date}`;
 
-    grid_left.append(gridImg);
+    let grid_pop = document.createElement("h5");  
+    grid_pop.textContent = `Popularity: ${element.popularity}`;
 
-    grid_right.append(gridH2, cardTextH3o, gridH5)
+    grid_left.append(gridImg);  
+
+    grid_right.append(gridH2, cardTextH3o, gridH5, grid_pop)
 
     gridBox.append(grid_left, grid_right)
 

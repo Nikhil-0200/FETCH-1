@@ -94,7 +94,7 @@ function displayMovieInfo(movieData){
         iconDiv1.append(iconImg1);
 
         let iconText1 = document.createElement("h2");
-        iconText1.textContent = `${parseFloat(movieData.imdbRating) + 1}/10`;
+        iconText1.textContent = `${(parseFloat(movieData.imdbRating) + 1.2).toFixed(1)}/10`;
 
         icon1.append(iconDiv1, iconText1);
 
@@ -111,7 +111,7 @@ function displayMovieInfo(movieData){
         iconDiv2.append(iconImg2);
 
         let iconText2 = document.createElement("h2");
-        iconText2.textContent = `${parseFloat(movieData.imdbRating) - 2}/10`;
+        iconText2.textContent = `${(Number(movieData.imdbRating) - 2).toFixed(1)}/10`;
 
         icon2.append(iconDiv2, iconText2);
 

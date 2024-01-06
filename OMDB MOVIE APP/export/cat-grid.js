@@ -28,7 +28,6 @@ let gridBox = document.createElement("div");
     gridDiv.append(gridBox);
     gridDiv.style.display = "grid"
 
-    console.log("Displaying all movies");
 
        })
 
